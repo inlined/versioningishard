@@ -10,6 +10,12 @@ type CloudEvent struct {
 	// EventID holds the unique ID of this occurrence.
 	EventID string `json:"eventId"`
 
+	// EventTime is the timestamp of when the event happened.
+	EventTime string `json:"eventTime"`
+
+	// SampledRate describes how many events this data represents.
+	SampledRate string `json:"sampledRate"`
+
 	// Extensions hold additional features not specified by the spec.
 	Extensions map[string]interface{} `json:",inline,exts"`
 }
