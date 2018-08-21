@@ -1,4 +1,4 @@
-# CloudEvents Micro - Version 1.0 #
+# CloudEvents Micro - Version 1.1 #
 
 ## Abstract
 
@@ -27,4 +27,19 @@ The choice of serialization mechanism will determine how the context attributes 
   * REQUIRED
   * MUST be a non-empty string
   * MUST be unique within the scope of the producer
+  
+### eventTime
+* Type: `String`
+* Description: Timestamp of when the event happened.
+* Constraints:
+  * OPTIONAL
+  * If present, MUST adhere to the format specified in RFC 3339
+
+### sampledRate
+* Type: `String`
+* Description: Formerly an extension in 1.0, the `sampledRate` field describes how many events this data represents.
+* Constraints:
+  * OPTIONAL
+  * If present, MUST be a string representation of a positive whole 32-bit number
+  * If absent, SHOULD be assumed to have a value of 1
   
