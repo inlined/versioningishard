@@ -39,7 +39,7 @@ this to see how each persona's work affects the others.
 
 ## Get started
 
-This demo requires [Go](golang.org) and assumes you have the `GOPATH` environment variable set.
+This demo requires [Go](https://golang.org) and assumes you have the `GOPATH` environment variable set.
 To get started, run the following commands:
 
 ```bash
@@ -181,7 +181,7 @@ func (c CloudEvent) SetEventID(id string) {
 Now the usage `event["sampledRate"]` is always safe.
 
 
-[Semver]: https://semver.org/]
+[Semver]: https://semver.org
 [CloudEvents]: https://github.com/cloudevents/spec
 [Protocol Buffers]: https://en.wikipedia.org/wiki/Protocol_Buffers
 [proto language]: https://developers.google.com/protocol-buffers/docs/proto
@@ -189,8 +189,8 @@ Now the usage `event["sampledRate"]` is always safe.
 [encoding/json]: https://golang.org/pkg/encoding/json/
 [Issue 63213]: https://github.com/golang/go/issues/6213
 [@duglin]: https://github.com/duglin
-[spec 1.0]: https://github.com/inlined/versioningishard/tags/spec-1.0
-[spec 1.1]: https://github.com/inlined/versioningishard/tags/spec-1.1
+[spec 1.0]: https://github.com/inlined/versioningishard/tree/spec-1.0/spec
+[spec 1.1]: https://github.com/inlined/versioningishard/tree/spec-1.1/spec
 [Thrift]: https://thrift.apache.org/
 [Bond]: https://microsoft.github.io/bond/
 [CAP theorem]: https://en.wikipedia.org/wiki/CAP_theorem
