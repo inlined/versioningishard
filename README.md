@@ -132,7 +132,7 @@ three attributes in most languages<sup>[2](#foot2)</sup>:
 * Forwards compatible + Structured: This is one of the most common choices. If a library developer released a struct-
   based library, all new versions are forwards-compatible as long as new properties are not
   required<sup>[3](#fooot3)</sup>
-* Forwards compatible + Extensible: Our demo _spec_ chose this route for JSON but our accidentally dropped forwards-
+* Forwards compatible + Extensible: Our demo _spec_ chose this route for JSON but our library accidentally dropped forwards-
   compatibility by using a `struct`. Our _library_ MAY choose this route as well with some non-obvious
   work<sup>[4](#foot4)</sup>. Any library that used the most common JSON idioms in Go would break users in the next
   upgrade.
